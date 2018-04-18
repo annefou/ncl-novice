@@ -4,9 +4,11 @@ teaching: 0
 exercises: 0
 questions:
 - "What is NCL?"
+- "How to invoke NCL from the command line?"
 objectives:
+- "Learn what is NCL"
 - "Learn how to start NCL"
-- "The netCDF data model"
+- "Learn about the netCDF data model"
 keypoints:
 - "NCL and its netCDF data model"
 ---
@@ -1279,14 +1281,3 @@ print(T@units)
 (0)     K
 ~~~
 {: .output}
-
-# Language Syntax
-
-# Array indexing, coordinate variables, attributes, data types
-
-# control-of-flow constructs
-
-# Printing
-
-# Debugging
-
