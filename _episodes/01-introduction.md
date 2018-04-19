@@ -1175,6 +1175,17 @@ print(f)
 ~~~
 {: .language-bash}
 
+For the comparison of different simulations or the joint analysis of ensemble simulations, it is
+very useful to access multiple files at once. The function addfiles can open multiple existing
+data files or create multiple new data files using one of the supported file formats.
+
+~~~
+list_of_files = systemfunc("ls *.nc") ; NetCDF file names
+f = addfiles(list_of_files, "r") ; data type `list`
+~~~
+{: .language-bash}
+
+
 * Use printVarSummary to get summary information on yoru variable:
 
 ~~~
