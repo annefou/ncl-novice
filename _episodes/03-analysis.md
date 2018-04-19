@@ -975,7 +975,8 @@ PHIS = f->PHIS                              ; get surface geopotential
 ; vector containing the new pressure levels 
 pnew = (/ 850.0,700.0,500.0,300.0,200.0 /)
 
-tbot = T(lev-1,:,:) 
+nlev = dimsizes(hyam)
+tbot = T(nlev-1,:,:) 
 T_p =vinth2p_ecmwf(T,hyam,hybm,pnew, \
 	           PS,1,P0mb,1,      \
                    True,1,tbot,PHIS)
